@@ -4,14 +4,14 @@ pipeline {
 
     environment {
         IMAGE_NAME = "react-app:latest"
-        APP_DIR = "~/app"
+        APP_DIR = "/home/sist/app"
     }
 
     stages {
 
         stage('Git Checkout') {
             steps {
-                checkout scm
+                checkout scmx
             }
         }
 		stage("Create .env") {
