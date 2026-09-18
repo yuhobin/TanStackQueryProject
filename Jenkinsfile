@@ -11,7 +11,7 @@ pipeline {
 
         stage('Git Checkout') {
             steps {
-                checkout scmx
+                checkout scm
             }
         }
 		stage("Create .env") {
