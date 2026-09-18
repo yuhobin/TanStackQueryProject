@@ -10,7 +10,7 @@ pipeline {
     stages {
 
         stage('Git Checkout') {
-            steps {git 
+            steps {
                 checkout scm
             }
         }
@@ -25,7 +25,7 @@ pipeline {
 						credentialsId: 'oracle_name',
 						variable: 'DB_USERNAME'
 					),
-					sring(
+					string(
 						credentialsId: 'oracle_pwd',
 						variable: 'DB_PASSWORD'
 					)
@@ -37,7 +37,7 @@ pipeline {
 						echo "DB_PASSWORD=${DB_PASSWORD}" >> .env
 						
 						chmod 600 .env
-						'''
+					'''
 				}
 			}
 		}
@@ -45,7 +45,7 @@ pipeline {
             steps {
                 sh '''
                     chmod +x gradlew
-                    ./gradlew clean build -test
+                    ./gradlew clean build -x test
                 '''
             }
         }
