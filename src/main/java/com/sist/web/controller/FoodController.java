@@ -32,7 +32,7 @@ import java.util.*;
  * 
  * 	==> 동작 확인 여부
  * 
- * 테스트
+ * 테스트2
  * 
  */
 @Controller
