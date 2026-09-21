@@ -32,7 +32,7 @@ import java.util.*;
  * 
  * 	==> 동작 확인 여부
  * 
- * 테스트5 docker 불필요 용량 삭제 디스크 메모리 확보 후 재시도(Jenkins restart 진행)
+ * 테스트5 docker 불필요 용량 삭제 디스크 메모리 확보 후 재시도(Jenkins restart 진행) 수정
  * 
  */
 @Controller
